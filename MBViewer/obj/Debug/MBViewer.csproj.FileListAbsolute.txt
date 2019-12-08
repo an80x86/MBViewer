@@ -1,0 +1,11 @@
+D:\Desktop\MBViewer\MBViewer\bin\Debug\MBViewer.exe.config
+D:\Desktop\MBViewer\MBViewer\bin\Debug\MBViewer.exe
+D:\Desktop\MBViewer\MBViewer\bin\Debug\MBViewer.pdb
+D:\Desktop\MBViewer\MBViewer\obj\Debug\MBViewer.csprojAssemblyReference.cache
+D:\Desktop\MBViewer\MBViewer\obj\Debug\MBViewer.MainForm.resources
+D:\Desktop\MBViewer\MBViewer\obj\Debug\MBViewer.Properties.Resources.resources
+D:\Desktop\MBViewer\MBViewer\obj\Debug\MBViewer.csproj.GenerateResource.cache
+D:\Desktop\MBViewer\MBViewer\obj\Debug\MBViewer.csproj.CoreCompileInputs.cache
+D:\Desktop\MBViewer\MBViewer\obj\Debug\MBViewer.exe
+D:\Desktop\MBViewer\MBViewer\obj\Debug\MBViewer.pdb
+D:\Desktop\MBViewer\MBViewer\obj\Debug\MBViewer.Remote.resources
