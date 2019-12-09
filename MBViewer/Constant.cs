@@ -10,7 +10,8 @@ namespace MBViewer
 {
     public class Constant
     {
-        public static int Time = 100;
+        public static int Time = 10;
+        public static long lastCustomerId = 1593;
 
         /// <summary>
         /// Struct representing a point.

@@ -1,7 +1,6 @@
 D:\Desktop\MBViewer\MBViewer\bin\Debug\MBViewer.exe.config
 D:\Desktop\MBViewer\MBViewer\bin\Debug\MBViewer.exe
 D:\Desktop\MBViewer\MBViewer\bin\Debug\MBViewer.pdb
-D:\Desktop\MBViewer\MBViewer\obj\Debug\MBViewer.csprojAssemblyReference.cache
 D:\Desktop\MBViewer\MBViewer\obj\Debug\MBViewer.MainForm.resources
 D:\Desktop\MBViewer\MBViewer\obj\Debug\MBViewer.Properties.Resources.resources
 D:\Desktop\MBViewer\MBViewer\obj\Debug\MBViewer.csproj.GenerateResource.cache
@@ -9,3 +8,18 @@ D:\Desktop\MBViewer\MBViewer\obj\Debug\MBViewer.csproj.CoreCompileInputs.cache
 D:\Desktop\MBViewer\MBViewer\obj\Debug\MBViewer.exe
 D:\Desktop\MBViewer\MBViewer\obj\Debug\MBViewer.pdb
 D:\Desktop\MBViewer\MBViewer\obj\Debug\MBViewer.Remote.resources
+D:\Desktop\MBViewer\MBViewer\bin\Debug\ServiceStack.Common.dll
+D:\Desktop\MBViewer\MBViewer\bin\Debug\ServiceStack.Interfaces.dll
+D:\Desktop\MBViewer\MBViewer\bin\Debug\ServiceStack.Redis.dll
+D:\Desktop\MBViewer\MBViewer\bin\Debug\ServiceStack.Text.dll
+D:\Desktop\MBViewer\MBViewer\bin\Debug\System.Buffers.dll
+D:\Desktop\MBViewer\MBViewer\bin\Debug\System.Memory.dll
+D:\Desktop\MBViewer\MBViewer\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Desktop\MBViewer\MBViewer\bin\Debug\ServiceStack.Common.xml
+D:\Desktop\MBViewer\MBViewer\bin\Debug\ServiceStack.Interfaces.xml
+D:\Desktop\MBViewer\MBViewer\bin\Debug\ServiceStack.Redis.xml
+D:\Desktop\MBViewer\MBViewer\bin\Debug\ServiceStack.Text.xml
+D:\Desktop\MBViewer\MBViewer\bin\Debug\System.Buffers.xml
+D:\Desktop\MBViewer\MBViewer\bin\Debug\System.Memory.xml
+D:\Desktop\MBViewer\MBViewer\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Desktop\MBViewer\MBViewer\obj\Debug\MBViewer.csproj.CopyComplete

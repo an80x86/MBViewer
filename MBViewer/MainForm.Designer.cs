@@ -56,6 +56,7 @@
             this.Controls.Add(this.button1);
             this.Name = "MainForm";
             this.Text = "MBViewer v1.0 (Alpha)";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.ResumeLayout(false);
 
         }

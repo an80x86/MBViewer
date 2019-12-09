@@ -12,12 +12,18 @@ namespace MBViewer
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-        static void Main()
+        static void Main(string[] param)
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Remote());
-            //Application.Run(new MainForm());
+            if (param.Length>0 && param[0].ToLower().Equals("server"))
+            {
+                Application.Run(new MainForm());
+            }
+            else
+            {
+                Application.Run(new Remote());
+            }
         }
     }
 }

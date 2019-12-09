@@ -28,8 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBoxMain = new System.Windows.Forms.PictureBox();
+            this.timerMain = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMain)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,6 +55,11 @@
             this.pictureBoxMain.TabIndex = 1;
             this.pictureBoxMain.TabStop = false;
             // 
+            // timerMain
+            // 
+            this.timerMain.Interval = 500;
+            this.timerMain.Tick += new System.EventHandler(this.timerMain_Tick);
+            // 
             // Remote
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -62,6 +69,7 @@
             this.Controls.Add(this.button1);
             this.Name = "Remote";
             this.Text = "Remote";
+            this.Load += new System.EventHandler(this.Remote_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMain)).EndInit();
             this.ResumeLayout(false);
 
@@ -71,5 +79,6 @@
 
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBoxMain;
+        private System.Windows.Forms.Timer timerMain;
     }
 }

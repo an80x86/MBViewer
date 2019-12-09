@@ -1,7 +1,9 @@
-﻿using System;
+﻿using ServiceStack.Redis;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
@@ -34,6 +36,15 @@ namespace MBViewer
             timerMain.Enabled = true;
         }
 
+        private string getBase64(Bitmap bImage)
+        {
+            System.IO.MemoryStream ms = new MemoryStream();
+            bImage.Save(ms, ImageFormat.Jpeg);
+            byte[] byteImage = ms.ToArray();
+            var SigBase64 = Convert.ToBase64String(byteImage); // Get Base64
+            return SigBase64;
+        }
+
         private void saveScreen() {
             Rectangle bounds = Screen.GetBounds(Point.Empty);
             using (Bitmap bitmap = new Bitmap(bounds.Width, bounds.Height))
@@ -42,10 +53,30 @@ namespace MBViewer
                 {
                     g.CopyFromScreen(Point.Empty, Point.Empty, bounds.Size);
                 }
-                var fileLocation = string.Format(@"D:\tmp\src\screen_{0}.jpg", DateTime.Now.ToString("yyyyMMddHHssfff"));
-                bitmap.Save(fileLocation, ImageFormat.Jpeg);
-                File.WriteAllText(fileLocation.Replace(".jpg", ".txt"), Constant.PointToString(Constant.GetCursorPosition()));
+                //var fileLocation = string.Format(@"D:\tmp\src\screen_{0}.jpg", DateTime.Now.ToString("yyyyMMddHHssfff"));
+                //bitmap.Save(fileLocation, ImageFormat.Jpeg);
+                //File.WriteAllText(fileLocation.Replace(".jpg", ".txt"), Constant.PointToString(Constant.GetCursorPosition()));
+
+                using (IRedisClient client = new RedisClient())
+                {
+                    //IRedisTypedClient
+                    var customerClient = client.As<Customer>();
+
+                    var customer = new Customer()
+                    {
+                        Id = Constant.lastCustomerId,
+                        Data = getBase64(bitmap),
+                        Point = Constant.PointToString(Constant.GetCursorPosition())
+                    };
+
+                    var savedCustomer = customerClient.Store(customer);
+                    Debug.WriteLine("Mesaj id : {0}", Constant.lastCustomerId);
+                }
             }
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
         }
     }
 }
